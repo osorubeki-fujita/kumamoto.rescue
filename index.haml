@@ -1,0 +1,345 @@
+!!!
+%html{:lang => "ja-jp"}
+  %head
+    %meta{:charset => "UTF-8"}/
+    %title 熊本地震 まとめ
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:href => "stylesheets/normalize.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Open+Sans:400,700", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/stylesheet.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/github-light.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/original.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %meta{ name: :description, content: '2016年4月14日に熊本県で発生した地震に関するまとめです。安否確認や情報収集にお役立てください。' }/
+    %meta{ property: 'og:description', content: '2016年4月14日に熊本県で発生した地震に関するまとめです。安否確認や情報収集にお役立てください。' }/
+  %body
+    %section.page-header
+      %h1.project-name 熊本地震 まとめ
+      %h2.project-tagline 2016年4月14日に熊本県で発生した地震に関するまとめです。
+      - # %a.btn{:href => "https://github.com/osorubeki-fujita/kumamoto.rescue"} View on GitHub
+      - # %a.btn{:href => "https://github.com/osorubeki-fujita/kumamoto.rescue/zipball/master"} Download .zip
+      - # %a.btn{:href => "https://github.com/osorubeki-fujita/kumamoto.rescue/tarball/master"} Download .tar.gz
+      %h3.project-tagline 安否確認や情報収集にお役立てください。
+
+    %p.note-header
+      Web 開発者の方へ:
+      %a{:href => 'https://github.com/osorubeki-fujita/kumamoto.rescue'}こちら
+      で Pull request を受け付けますので、ぜひ編集にご協力ください。
+      編集の際は、Html, Haml どちらのファイルを編集して頂いても構いません。
+    %p.note-header
+      一般の方へ: コメント、要望等は
+      %a{:href => 'https://github.com/osorubeki-fujita/kumamoto.rescue/issues/1'}こちら
+      へお願い致します。
+
+    %section.main-content
+      %h1
+        避難所
+      %ul
+        %li
+          - url = "http://crisis.yahoo.co.jp/shelter/list/43/"
+          %a{:href =>url} 避難所マップ（熊本県） - Yahoo!天気・災害
+          \-
+          %a.url{:href => url}<
+            = url
+        %li
+          - url = "http://crisis.yahoo.co.jp/shelter/map/"
+          %a{:href =>url} 避難所マップ - Yahoo!天気・災害（地図から探す）
+          \-
+          %a.url{:href => url}<
+            = url
+        %li
+          - url = "http://goo.gl/ByqVuX"
+          %a{:href =>url} Google - 災害情報マップ
+          \-
+          %a.url{:href => url}<
+            = url
+
+      %h1
+        %a.anchor{"aria-hidden" => "true", :href => "#%E5%BF%9C%E6%80%A5%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB", :id => "応急マニュアル"}>
+          %span.octicon.octicon-link{"aria-hidden" => "true"}
+        応急マニュアル
+      %h2<
+        - url = 'http://www.nhk.or.jp/sonae/'
+        %a{:href => url } NHK そなえる 防災
+        \-
+        %a.url{:href => url}<
+          = url
+      %ul
+        %li
+          - url = 'http://www.nhk.or.jp/sonae/douga/index.html'
+          %a{:href => url } NHK そなえる 防災｜動画で学ぶ
+          \-
+          %a.url{:href => url}<
+            = url
+
+      %h2<
+        %a.anchor{"aria-hidden" => "true", :href => "#%E6%9D%B1%E4%BA%AC%E9%98%B2%E7%81%BD", :id => "東京防災"}>
+          %span.octicon.octicon-link{"aria-hidden" => "true"}
+        %a{:href => 'http://www.bousai.metro.tokyo.jp/book/' } 東京防災
+      %p.note<
+        2015年9月1日の「防災の日」に合わせて東京都が作成し、都内各世帯に配布した冊子。ネット環境での閲覧、PDF版のダウンロードも可。
+        「04　もしもマニュアル」など、東京以外でも役に立つコンテンツが含まれている。これを機に、スマホやタブレット、PCなどに保存しておきましょう。
+      %ul
+        %li
+          - url = "http://www.bousai.metro.tokyo.jp/book/"
+          %a{:href =>url} Web版
+          \- 東京防災｜東京都防災ホームページ
+          %a.url{:href => url}<
+            = url
+        %li
+          - url = "http://www.metro.tokyo.jp/INET/OSHIRASE/2015/08/20p8l300.htm"
+          %a{:href => url} PDF版へのリンク
+          \- 「東京防災」の作成について｜東京都
+          %a.url{:href => url}<
+            = url
+          %ul
+            %li
+              %a{:href => "http://www.metro.tokyo.jp/ENGLISH/GUIDE/BOSAI/index.htm"} English
+              \/
+              %a{:href => "http://www.metro.tokyo.jp/CHINESE/GUIDE/BOSAI/index.htm"} 中文
+              \/
+              %a{:href => "http://www.metro.tokyo.jp/KOREAN/GUIDE/BOSAI/index.htm"} 한글
+      %h1
+        %a.anchor{"aria-hidden" => "true", :href => "#%E6%83%85%E5%A0%B1%E5%8F%8E%E9%9B%86", :id => "情報収集"}>
+          %span.octicon.octicon-link{"aria-hidden" => "true"}
+        情報収集
+      %p
+        %strong 不急不要の電話は控えてください。本当に必要な緊急の電話が繋がりにくくなってしまいます。
+      %h2
+        %a.anchor{"aria-hidden" => "true", :href => "#%E5%AE%89%E5%90%A6%E7%A2%BA%E8%AA%8D%E9%96%A2%E9%80%A3%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9", :id => "安否確認関連サービス"}>
+          %span.octicon.octicon-link{"aria-hidden" => "true"}
+        安否確認関連サービス
+      %h3 Google
+      %ul
+        %li
+          %a{:href => "http://www.google.org/crisisresponse/japan"} Google クライシスレスポンス
+          \-
+          %a.url{:href => "http://www.google.org/crisisresponse/japan"} http://www.google.org/crisisresponse/japan
+          %ul
+            %li Google による災害情報ポータルサイト
+            %li
+              %a{:href => "http://google.org/personfinder/japan/"} パーソンファインダー (安否情報): 日本
+              \-
+              %a.url{:href => "http://google.org/personfinder/japan/"} http://google.org/personfinder/japan/
+      %h3 NTTドコモ
+      %ul
+        %li
+          %a{:href => "https://www.nttdocomo.co.jp/info/disaster/disaster_voice/index.html"} 災害用音声お届けサービス | お知らせ | NTTドコモ
+          \-
+          %a.url{:href => "https://www.nttdocomo.co.jp/info/disaster/disaster_voice/index.html"} https://www.nttdocomo.co.jp/info/disaster/disaster_voice/index.html
+        %li
+          %a{:href => "https://www.nttdocomo.co.jp/info/disaster/disaster_board/index.html"} 災害用伝言板 | お知らせ | NTTドコモ
+          \-
+          %a.url{:href => "https://www.nttdocomo.co.jp/info/disaster/disaster_board/index.html"} https://www.nttdocomo.co.jp/info/disaster/disaster_board/index.html
+      %h3 KDDI (au)
+      %ul
+        %li
+          - url = 'http://dengon.ezweb.ne.jp/'
+          %a{:href => url } 災害用伝言板 (au)
+          \-
+          %a.url{:href => url }<
+            = url
+          %li
+            - url = 'http://www.au.kddi.com/mobile/anti-disaster/onsei-otodoke/'
+            %a{:href => url } 災害用音声お届けサービス │災害時・緊急時対策│au
+            \-
+            %a.url{:href => url }<
+              = url
+          %li
+            - url = 'http://www.au.kddi.com/mobile/service/smartphone/safety/saigai-taisaku/'
+            %a{:href => url } http://www.au.kddi.com/mobile/service/smartphone/safety/saigai-taisaku/
+            \-
+            %a.url{:href => url }<
+              = url
+            %p.note auの災害関連サービスをまとめて操作できる災害対策アプリ。「災害用伝言板」「緊急速報メール」「災害用音声お届けサービス」「災害情報」をまとめたもの。
+
+      %h3 NTT（ドコモ以外）
+      %ul
+        %li
+          %a{:href => "https://www.ntt-east.co.jp/saigai/voice171/"} 災害用伝言ダイヤル（171） | 広報宣伝活動 | 企業情報 | NTT東日本
+          \-
+          %a.url{:href => "https://www.ntt-east.co.jp/saigai/voice171/"} https://www.ntt-east.co.jp/saigai/voice171/
+          %ul
+            %li.note '171' に電話をかけるだけで伝言の録音・再生ができる。NTT東日本・NTT西日本の電話サービスから伝言の録音・再生をする場合の通話料は無料。暗証番号を利用することで、他人に聞かれたくない伝言なども録音・再生できる。
+        %li
+          %a{:href => "https://www.web171.jp/web171app/topRedirect.do"}> 災害時TOP画面 | 災害用伝言板（web171）
+          （NTTグループ） -
+          %a.url{:href => "https://www.web171.jp/web171app/topRedirect.do"} https://www.web171.jp/web171app/topRedirect.do
+          %ul
+            %li.note 災害用伝言ダイヤル (171) に登録されたメッセージを確認することができる
+      %h3
+        SoftBank
+      %ul
+        %li
+          - url = 'http://www.softbank.jp/mobile/service/dengon/'
+          %a{:href => url } 災害用伝言板／災害用音声お届けサービス | サービス | モバイル | ソフトバンク
+          \-
+          %a.url{:href => url }<
+            = url
+        %li
+          - url = 'http://www.softbank.jp/corp/group/sbm/news/info/2016/20160415_01/'
+          %a{:href => url } 熊本県で発生した地震に伴うソフトバンクWi-Fiスポットの無料開放について | ソフトバンク株式会社 | グループ企業 | 企業・IR | ソフトバンクグループ
+          \-
+          %a.url{:href => url }<
+            = url
+      %h3
+        公衆無線LAN
+      %ul
+        %li
+          - url = 'http://www.wlan-business.org/customer/introduction/feature/00000japan'
+          %a{:href => url } 大規模災害時における公衆無線LANの無料開放について  |  無線LANビジネス推進連絡会【WiBiz（ワイビズ）】
+          \-
+          %a.url{:href => url }<
+            = url
+          %p.note 災害用の統一SSID『00000JAPAN』を利用することができる。
+
+        %a#sns.anchor{"aria-hidden" => "true", :href => "#sns"}>
+          %span.octicon.octicon-link{"aria-hidden" => "true"}
+      %h3 Twitter
+      %h4 重要
+      :erb
+        <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Twitterで緊急救助を求める場合には、<a href="https://twitter.com/hashtag/%E6%95%91%E5%8A%A9?src=hash">#救助</a> ハッシュタグとともに要請内容、写真、住所または位置情報など、具体的かつ正確な情報をつけましょう。救助が完了したら、報告ツイートするとともに、救助要請ツイートを削除してください。 <a href="http://t.co/X8rZLBDyfD">pic.twitter.com/X8rZLBDyfD</a></p>&mdash; Twitter Lifeline (@TwitterLifeline) <a href="https://twitter.com/TwitterLifeline/status/642206749265518592">2015年9月11日</a></blockquote>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      %p.note 引用リツイートは、もとのツイートが消えても消えません。引用リツイートは使わないようにしましょう。
+      %h3 Facebook
+      %ul
+        %li
+          - url = "https://www.facebook.com/about/safetycheck/"
+          %a{:href => url } Facebook 災害時情報センター
+          \-
+          %a.url{:href => url }<
+            = url
+          %p.description 災害時に友達や家族の安否確認をしましょう。
+
+          %ul
+            %li.note 災害の影響を受けた地域にいるユーザーは無事の報告をすることができ、その友達に通知が届く。
+            %li
+              %a{:href => "http://ja.newsroom.fb.com/news/2014/10/safetycheck/"} 災害時情報センターのご案内 | Facebookニュースルーム
+              \-
+              %a.url{:href => "http://ja.newsroom.fb.com/news/2014/10/safetycheck/"} http://ja.newsroom.fb.com/news/2014/10/safetycheck/
+            %li
+              %a{:href => "http://ja.newsroom.fb.com/news/2014/10/safetycheck/"} 災害時情報センター | Facebookヘルプセンター
+              \-
+              %a.url{:href => "http://ja.newsroom.fb.com/news/2014/10/safetycheck/"} http://ja.newsroom.fb.com/news/2014/10/safetycheck/
+      %h3 LINE
+      %ul
+        %li
+          %a{:href => "http://line.me/ja/call"} LINE Out
+          \-
+          %a.url{:href => "http://line.me/ja/call"} http://line.me/ja/call
+          :erb
+            <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">LINEから固定電話・携帯電話にかけられる「LINE Out」機能で、日本国内の番号への発信を1通話最大10分まで無料化しました。家の電話やLINEでつながっていない方への安否確認にご活用ください。<a href="https://twitter.com/hashtag/%E7%86%8A%E6%9C%AC?src=hash">#熊本</a> <a href="https://twitter.com/hashtag/%E5%9C%B0%E9%9C%87?src=hash">#地震</a> <a href="https://twitter.com/hashtag/%E6%8B%A1%E6%95%A3%E5%B8%8C%E6%9C%9B?src=hash">#拡散希望</a> <a href="https://t.co/rGzVUwG2mk">pic.twitter.com/rGzVUwG2mk</a></p>&mdash; LINE公式アカウント (@LINEjp_official) <a href="https://twitter.com/LINEjp_official/status/720616623258730496">2016年4月14日</a></blockquote>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          %ul
+            %li 不急不要の電話はくれぐれも控えてください。
+      %h1<
+        = '交通'
+      %h2<
+        = '鉄道'
+      %h3 JR
+      %ul
+        %li<
+          - url = 'http://www.jrkyushu.co.jp/trains/unkou.jsp'
+          %a{ href: url } 運行情報 | JR九州
+          \-
+          %a.url{:href => url }
+            = url
+          %p.description JR九州の最新運行情報。事故・災害等で15分以上の遅れが見込まれる場合等に情報提供を行っています。
+          %h4 4月15日（金）の運転計画
+          %p
+            = '2016/04/15 04:20時点の情報（同日04:35頃閲覧）をもとにまとめ'
+          %table
+            %tbody
+              %tr
+                %td 九州新幹線
+                %td 運転見合わせ
+                %td 博多〜鹿児島中央（全線）
+              %tr
+                %td 鹿児島本線
+                %td 運転見合わせ
+                %td 荒尾〜八代
+              %tr
+                %td 豊肥本線
+                %td 運転見合わせ
+                %td 熊本〜宮地
+              %tr
+                %td 肥薩線
+                %td 運転見合わせ
+                %td 八代〜人吉
+              %tr
+                %td 三角線
+                %td 運転見合わせ
+                %td 宇土〜三角
+          %ul
+            %li 鹿児島本線 博多〜荒尾間は、始発より本数を減らして運転
+            %li 特急「有明」「あそぼーい！」「A列車で行こう」「九州横断特急」「SL人吉」は、終日運休
+            %li 高速バス「B＆Sみやざき」は、上りは始発から運転見合わせ、下りは未定
+            %li その他の線区は、始発より所定運転
+      %h3<
+        - url = 'http://www.kotsu-kumamoto.jp/default.aspx?site=1'
+        %a{ href: url } 熊本市交通局
+        \-
+        %a.url{:href => url }
+          = url
+      %ul
+        %li
+          - url = 'http://www.kotsu-kumamoto.jp/kinkyu/pub/Default.aspx?c_id=4'
+          %a{ href: url } 4月15日の市電の運行について（4月15日午前2時15分現在）
+          \-
+          %a.url{:href => url }
+            = url
+          %p 4月15日の運行については、始発前に全線の安全点検を行い、改めてお知らせいたします。
+          %p （2016/04/15 04:45頃閲覧）
+      %h3<
+        - url = 'http://www.kumamotodentetsu.co.jp/'
+        %a{ href: url } 熊本電鉄
+        \-
+        %a.url{:href => url }
+          = url
+
+      %ul
+        %li
+          - url = 'http://www.kumamotodentetsu.co.jp/news/20160415889.html'
+          %a{ href: url } 地震の影響による4月15日の列車の運行について
+          \-
+          %a.url{:href => url }
+            = url
+          %p 明日の列車の運行予定につきましては、午前3時に被害箇所の復旧を済ませましたので、今後大きな余震が発生せずに、始発列車前の点検により運行に問題がなれば始発列車より通常運行を行なう予定です。
+          %p （2016/04/15 04:43頃閲覧）
+
+      %h2<
+        = '道路'
+      %ul
+        %li<
+          %a{ href: 'http://www.toyota.co.jp/jpn/auto/passable_route/map/' } トヨタ | 通れた道マップ
+          \-
+          %a.url{:href => "http://www.toyota.co.jp/jpn/auto/passable_route/map/"} http://www.toyota.co.jp/jpn/auto/passable_route/map/
+          %p.description トヨタ企業サイトの「通れた道マップ」は、過去24時間の道路の通行実績を集計し、災害時に被災地の避難や救援の為の移動を支援します。
+          %image.screenshot{ src: 'images/toyota_street_map.png' }
+      %h1<
+        %a.anchor{"aria-hidden" => "true", :href => "#%E3%83%9C%E3%83%A9%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2", :id => "ボランティア"}>
+          %span.octicon.octicon-link{"aria-hidden" => "true"}
+        ボランティア
+      %p 現地の詳細な情報が把握でき次第、追加する予定です。
+      %h2<
+        %a.anchor{"aria-hidden" => "true", :href => "#%E5%8F%82%E8%80%83", :id => "参考"}>
+          %span.octicon.octicon-link{"aria-hidden" => "true"}
+        参考
+      %ul
+        %li
+          %a{:href => "http://www.buzzfeed.com/satoruishido/chiki-interview#.pvv8lVO1W"} 良い支援とダメな支援の違いとは？荻上チキさんに聞く
+          \-
+          %a.url{:href => "http://www.buzzfeed.com/satoruishido/chiki-interview#.pvv8lVO1W"} http://www.buzzfeed.com/satoruishido/chiki-interview#.pvv8lVO1W
+      %footer.site-footer
+        %span.site-footer-owner
+          %a{:href => "https://github.com/osorubeki-fujita/kumamoto.rescue"} 熊本地震 まとめ
+          is maintained by
+          = succeed "." do
+            %a{:href => "https://github.com/osorubeki-fujita"} osorubeki-fujita
+        %span.site-footer-credits
+          This page was generated by
+          %a{:href => "https://pages.github.com"} GitHub Pages
+          using the
+          %a{:href => "https://github.com/jasonlong/cayman-theme"} Cayman theme
+          by
+          = succeed "." do
+            %a{:href => "https://twitter.com/jasonlong"} Jason Long
