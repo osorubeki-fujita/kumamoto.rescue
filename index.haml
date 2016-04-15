@@ -371,8 +371,9 @@
           %a{ href: url } Yahoo!地図 道路通行実績情報
           \-
           %a.url{:href => url }< url
-          :erb
-            <script type='text/javascript' charset='UTF-8' src='http://map.yahooapis.jp/MapsService/embedmap/V2/?zoom=10&amp;lat=32.78986407732434&amp;lon=130.82020207995652&amp;cond=className%3Ayolp-tilelayer%3B&amp;pluginid=in&amp;z=14&amp;mode=map&amp;active=true&amp;layer=in&amp;home=on&amp;hlat=32.789828&amp;hlon=130.741667&amp;pointer=off&amp;pan=off&amp;ei=utf8&amp;v=3&amp;datum=wgs&amp;width=480&amp;height=360&amp;device=pc&amp;isleft='></script>
+          .map-outer.clr
+            :erb
+              <script type='text/javascript' charset='UTF-8' src='http://map.yahooapis.jp/MapsService/embedmap/V2/?zoom=10&amp;lat=32.78986407732434&amp;lon=130.82020207995652&amp;cond=className%3Ayolp-tilelayer%3B&amp;pluginid=in&amp;z=14&amp;mode=map&amp;active=true&amp;layer=in&amp;home=on&amp;hlat=32.789828&amp;hlon=130.741667&amp;pointer=off&amp;pan=off&amp;ei=utf8&amp;v=3&amp;datum=wgs&amp;width=480&amp;height=360&amp;device=pc&amp;isleft='></script>
         %li<
           %a{ href: 'http://www.toyota.co.jp/jpn/auto/passable_route/map/' }< トヨタ | 通れた道マップ
           \-

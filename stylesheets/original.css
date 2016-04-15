@@ -18,4 +18,20 @@
   text-align: center;
   font-size: 14px; }
 
+.row:after, .col:after, .clr:after, .group:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+* html .clr {
+  zoom: 1; }
+
+/* IE6 */
+*:first-child + html .clr {
+  zoom: 1; }
+
+/* IE7 */
+
 /*# sourceMappingURL=original.css.map */
