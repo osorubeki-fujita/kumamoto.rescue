@@ -33,6 +33,7 @@
     %section.main-content
       %h1 更新履歴
       %ul.update-info
+        %li 2016/04/15 14:00 「九州のりものinfo.com」「Yahoo!地図 道路通行実績情報」へのリンクを追加
         %li 2016/04/15 13:45 鉄道の情報を更新
         %li 2016/04/15 13:30 高速道路の情報を追加
         %li 2016/04/15 03:20頃 開設
@@ -322,6 +323,16 @@
           %p 本日は始発列車より平常通り運行を行なっております。
           %p （2016/04/15 13:40頃閲覧）
 
+      %h3 その他
+      %ul
+        %li
+          - url = 'http://www.norimono-info.com/index.php'
+          %a{ href: url } 九州のりものinfo.com
+          \-
+          %a.url{:href => url }
+            = url
+          %p.note 九州全般の、バス、旅客船・フェリー、航空の運行情報サイト
+
       %h2<
         = '道路'
       %ul
@@ -349,6 +360,19 @@
                   %tr
                     %td 九州中央自動車道
                     %td 嘉島JCT～益城TB（〜小池高山IC）
+        %li<
+          - url = 'http://www.jartic.or.jp/'
+          %a{ href: url } 道路交通情報Now!!（日本道路交通情報センター：JARTIC）
+          \-
+          %a.url{:href => url }< url
+          %p.note 道路交通情報Now!! は、高速・都市高速・一般道路 （主要地域） の情報を、簡易図形と文字で24時間 （5分更新） 提供しています。
+        %li<
+          - url = 'http://yahoo.jp/PoRkrr'
+          %a{ href: url } Yahoo!地図 道路通行実績情報
+          \-
+          %a.url{:href => url }< url
+          :erb
+            <script type='text/javascript' charset='UTF-8' src='http://map.yahooapis.jp/MapsService/embedmap/V2/?zoom=10&amp;lat=32.78986407732434&amp;lon=130.82020207995652&amp;cond=className%3Ayolp-tilelayer%3B&amp;pluginid=in&amp;z=14&amp;mode=map&amp;active=true&amp;layer=in&amp;home=on&amp;hlat=32.789828&amp;hlon=130.741667&amp;pointer=off&amp;pan=off&amp;ei=utf8&amp;v=3&amp;datum=wgs&amp;width=480&amp;height=360&amp;device=pc&amp;isleft='></script>
         %li<
           %a{ href: 'http://www.toyota.co.jp/jpn/auto/passable_route/map/' }< トヨタ | 通れた道マップ
           \-
