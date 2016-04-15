@@ -31,6 +31,10 @@
       へお願い致します。
 
     %section.main-content
+      %h1 更新履歴
+      %ul.update-info
+        %li 2016/04/15 13:30 高速道路の情報を追加
+        %li 2016/04/15 03:20頃 開設
       %h1
         避難所
       %ul
@@ -310,7 +314,31 @@
         = '道路'
       %ul
         %li<
-          %a{ href: 'http://www.toyota.co.jp/jpn/auto/passable_route/map/' } トヨタ | 通れた道マップ
+          - url = 'http://www.w-nexco.co.jp/'
+          %a{ href: url } NEXCO西日本
+          \-
+          %a.url{:href => url }< url
+          %ul
+            %li
+              - url = 'http://www.w-nexco.co.jp/emc/20160415125858.html'
+              %a{ href: url }< 地震による九州地方の高速道路の通行止めについて
+              \-
+              %a.url{:href => url }<
+                = url
+              %p 通行止め区間（2016年04月15日12時00分 現在の情報をまとめ／13:25 頃閲覧）
+              %table
+                %tbody
+                  %tr
+                    %td 九州自動車道
+                    %td 植木IC～えびのIC
+                  %tr
+                    %td 南九州西回り自動車道
+                    %td 八代JCT～日奈久IC（八代日奈久道路）
+                  %tr
+                    %td 九州中央自動車道
+                    %td 嘉島JCT～益城TB（〜小池高山IC）
+        %li<
+          %a{ href: 'http://www.toyota.co.jp/jpn/auto/passable_route/map/' }< トヨタ | 通れた道マップ
           \-
           %a.url{:href => "http://www.toyota.co.jp/jpn/auto/passable_route/map/"} http://www.toyota.co.jp/jpn/auto/passable_route/map/
           %p.description トヨタ企業サイトの「通れた道マップ」は、過去24時間の道路の通行実績を集計し、災害時に被災地の避難や救援の為の移動を支援します。
